@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lead_1791455271598_zk0is",
+    "name": "Suresh Kumar",
+    "mobile": "9876543210",
+    "createdAt": "2026-10-08T10:27:51.598Z",
+    "istTimestamp": "8 Oct 2026, 3:57:51 pm",
+    "sourcePage": "Homepage Entry Gate",
+    "consent": true,
+    "consentTimestamp": "2026-10-08T10:27:51.598Z",
+    "whatsappStatus": "simulated_sent",
+    "whatsappRetries": 0,
+    "contacted": false,
+    "ipAddress": "127.0.0.1"
+  },
+  {
+    "id": "lead_1791453191874_rwqk0",
+    "name": "Sayyad abdul basith",
+    "mobile": "8143632178",
+    "createdAt": "2026-10-08T09:53:11.874Z",
+    "istTimestamp": "8 Oct 2026, 3:23:11 pm",
+    "sourcePage": "/",
+    "consent": true,
+    "consentTimestamp": "2026-10-08T09:53:11.874Z",
+    "whatsappStatus": "simulated_sent",
+    "whatsappRetries": 0,
+    "contacted": false,
+    "ipAddress": "49.238.32.101"
+  },
+  {
+    "id": "lead_1791452862812_f6awb",
+    "name": "Mohammed Adil",
+    "mobile": "9876543210",
+    "createdAt": "2026-10-08T09:47:42.812Z",
+    "istTimestamp": "8 Oct 2026, 3:17:42 pm",
+    "sourcePage": "/test",
+    "consent": true,
+    "consentTimestamp": "2026-10-08T09:47:42.812Z",
+    "whatsappStatus": "simulated_sent",
+    "whatsappRetries": 0,
+    "contacted": false,
+    "ipAddress": "127.0.0.1"
+  }
+]

@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-canvas: #090A0E;
+  --color-canvas-light: #12141C;
+  --color-surface: #171924;
+  --color-surface-hover: #1E2130;
+  --color-charcoal: #090A0E;
+  --color-stone: #94A3B8;
+  --color-accent: #F59E0B;
+  --color-accent-amber: #F59E0B;
+  --color-accent-gold: #E5B263;
+  --color-accent-brass: #B08D57;
+  --color-accent-hover: #D97706;
+}
+
+@layer base {
+  :root {
+    --bg-canvas: #090A0E;
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+    --accent-amber: #F59E0B;
+    --accent-gold: #E5B263;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090A0E;
+    color: #F8FAFC;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(245, 158, 11, 0.08), transparent 70%),
+      radial-gradient(circle 600px at 100% 40%, rgba(139, 92, 246, 0.05), transparent),
+      radial-gradient(circle 600px at 0% 80%, rgba(6, 182, 212, 0.04), transparent);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* 3D Perspective Utilities */
+.perspective-1200 {
+  perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Architectural blueprint grid with radiant accents */
+.blueprint-grid-dark {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 158, 11, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 158, 11, 0.06) 1px, transparent 1px);
+}
+
+.blueprint-grid-fine {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Chromatic Hairline Rules */
+.hairline-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hairline-r {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hairline-l {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Chromatic Radiance Box Engine Classes */
+.chromatic-glow-active {
+  box-shadow: 
+    0 0 25px -5px rgba(245, 158, 11, 0.25),
+    0 0 15px -3px rgba(217, 70, 239, 0.2),
+    0 0 35px -8px rgba(6, 182, 212, 0.15);
+}
+
+@keyframes chromaticRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.animate-chromatic {
+  animation: chromaticRotate 10s linear infinite;
+}
+
+/* Shimmer gradient line */
+.shimmer-line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(245, 158, 11, 0.8) 50%,
+    rgba(217, 70, 239, 0.8) 75%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmerMove 3.5s ease-in-out infinite;
+}
+
+@keyframes shimmerMove {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Smooth luxury scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090A0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #232738;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
